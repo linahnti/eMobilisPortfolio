@@ -1,0 +1,147 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #536468;
+    padding: 10px 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Header Section */
+.header {
+    display: grid;
+    place-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.profile-img {
+    border-radius: 10%;
+    width: 350px;
+    height: 350px;
+}
+
+/* Tagline Section */
+.tagline {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(105, 101, 101);
+}
+
+/* Skills and Hobbies Section */
+.skills-hobbies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.skills, .hobbies {
+    padding: 20px;
+    background-color: rgb(105, 101, 101);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: rgb(25, 27, 54);
+}
+
+/* Footer Section */
+.footer {
+    background-color: #536468;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+/* Contact Form */
+.contact {
+    padding: 50px;
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    width: 500px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #536468;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-hobbies {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: block;
+        text-align: right;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+}
